@@ -1,0 +1,33 @@
+.content {
+  display: inline-block;
+  left: 15%;
+  max-width: 640px;
+  color: #fff;
+
+  animation: fadeIn 1s .3s linear backwards;
+}
+
+.content__title {
+  font-size: 64px;
+  font-weight: 600;
+  margin-bottom: 32px;
+  text-shadow: 4px 8px 16px rgba(0, 0, 0, 0.8);
+}
+
+.content__description {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 400;
+  margin-bottom: 48px;
+  text-align: justify;
+  text-shadow: 1px 10px 16px rgba(0, 0, 0, 0.8);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

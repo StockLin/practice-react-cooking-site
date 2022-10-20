@@ -1,0 +1,180 @@
+.btn {
+  display: inline-block;
+  padding: 12px 32px;
+  color: #fff;
+  background-color: #3c7846;
+  border-radius: 5px;
+  transition: all .3s;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #3c7846a1;
+}
+
+.btn:active {
+  background-color: #3c7846d5;
+}
+
+.wrapper {
+  /* border: 1px solid #000; */
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 64px;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.navbar .container {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .navbar__logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.navbar__logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar__search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-right: 16px;
+}
+
+.navbar__search i {
+  color: #fff;
+}
+
+.navbar__search .navbar__search-input {
+  display: inline-block;
+  border: 0;
+  background-color: rgba(218, 218, 218, 0.325);
+  width: 0;
+  padding: 0;
+  margin-left: 8px;
+  border-radius: 5px;
+  outline: none;
+  transition: all .3s;
+}
+
+.navbar__search .navbar__search-input.visible {
+  width: 180px;
+  padding: 8px 12px;
+}
+
+.nav {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-right: 8px;
+
+  list-style-type: none;
+}
+
+.nav .nav__item {
+  padding: 12px 32px;
+  text-decoration: none;
+}
+
+.nav .nav__link {
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+  font-weight: 500;
+  transition: all .3s;
+  padding: 4px 0;
+
+  
+}
+
+.nav .nav__link::after {
+  content: "";
+  display: block;
+  height: 3px;
+  background-color: #fff;
+  width: 0;
+  transition: all .3s;
+}
+
+.nav .nav__link:hover {
+  opacity: 0.8;
+}
+
+.nav .nav__link:hover::after,
+.nav .nav__link.active::after {
+  width: 100%;
+}
+
+/* content */
+.main {
+  display: block;
+  margin-top: 64px;
+  padding: 240px 0;
+  /* border: 1px solid #000; */
+  width: 100%;
+}
+
+/* background shape */
+.bg-shape {
+  position: absolute;
+  background-color: var(--bg-color-1);
+}
+
+.bg-shape.bg-topLeftShape {
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  top: -300px;
+  left: -200px;
+}
+
+.bg-shape.bg-rightShape {
+  width: 35%;
+  height: 100%;
+  right: 0;
+}
+
+.bg-shape.bg-rightBottomShape {
+  width: 60%;
+  height: 600px;
+  border-radius: 50% 0% 0 0;
+  bottom: -300px;
+  right: 0;
+}
+
+.bg-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
